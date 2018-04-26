@@ -17,6 +17,7 @@ public class arvutus {
         driver.findElement(By.id("m")).sendKeys("3");
         driver.findElement(By.id("btn")).click();
         WebElement strvalue = driver.findElement(By.xpath("//*[@id=\"tulemus\"]"));
+        //kontrollib etteantud vastusega
         String expected = "10";
         String actual = strvalue.getText();
         System.out.println(actual);
@@ -37,6 +38,7 @@ public class arvutus {
         driver.findElement(By.id("m")).sendKeys("3");
         driver.findElement(By.id("btn")).click();
         WebElement strvalue = driver.findElement(By.xpath("//*[@id=\"tulemus\"]"));
+        //kontrollib faktorriaalide arvutamist ja kombinatsioonide arvutus kaiku
         int tulemus = ((5*4*3*2*1)/((3*2*1)*(2*1)));
         String expected = Integer.toString(tulemus);
         String actual = strvalue.getText();
