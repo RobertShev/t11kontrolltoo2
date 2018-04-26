@@ -1,0 +1,8 @@
+#surefire
+#Thu Apr 26 10:11:58 EEST 2018
+maven.ext.class.path=C\:\\Program Files\\NetBeans 8.2\\java\\maven-nblib\\netbeans-eventspy.jar
+user.dir=D\:\\Java\\kt2\\KombTest
+file.encoding=UTF-8
+localRepository=C\:\\Users\\rober\\.m2\\repository
+basedir=D\:\\Java\\kt2\\KombTest
+test=arvutus
