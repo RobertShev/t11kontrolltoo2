@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+     <title>Kombinatsiooni leidmine</title>
+     <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+     <script>
+        function kuvaArvutus(){
+           $.ajax(
+            {url:"/loetelu", 
+             method:"GET",
+             dataType:"json",
+             success: function(saabuvTekst){
+              console.log(saabuvTekst);
+              $("#Arvutus").empty();
+              var loetelu=$("#Arvutus").append("<ul />");
+              $.each(saabuvTekst, function(nr, komb){
+                 loetelu.append($("<li />").html(komb.mudel));
+              });
+            }
+           }
+          );
+        }
+     </script>
+  </head>
+  <body onload="kuvaArvutus()">
+     <h1>Arvutus</h1>
+     <div id="Arvutus">kihikoht</div>
+  </body>
+</html>

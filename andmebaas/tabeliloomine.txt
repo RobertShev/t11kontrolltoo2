@@ -1,0 +1,9 @@
+CREATE TABLE maanteejalgrattad(
+   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+   mudel VARCHAR(50),
+   aasta INT
+);
+
+INSERT INTO maanteejalgrattad VALUES (DEFAULT, 'Felt_Z85', 2016);
+
+
