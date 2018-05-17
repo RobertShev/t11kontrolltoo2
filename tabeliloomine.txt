@@ -1,0 +1,10 @@
+CREATE TABLE komb(
+   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+   n INT,
+   m INT,
+   vastus FLOAT 
+);
+
+INSERT INTO komb VALUES (DEFAULT, 3, 2, 10);
+
+
